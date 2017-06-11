@@ -1,6 +1,6 @@
 doctype html
 head
-  title Wedding
+  title DEREVO
   meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
   meta(name="viewport" content="width=device-width")
   meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
@@ -9,5 +9,77 @@ head
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
 
+  script.
+    require('initialize')
+
 body
-  #app
+  .modal
+    .modal-background
+    .modal-close
+    .modal-inner
+
+  .app
+    .aside
+      a.logo(href="/")
+      .menu
+        a.menu-item.menu-item--active(href="#bracelets")
+          | Браслеты
+        a.menu-item(href="#chokers")
+          | Чокеры
+        a.menu-item(href="#earrings")
+          | Серьги
+        a.menu-item(href="#rings")
+          | Кольца
+        a.menu-item(href="#pendant")
+          | Подвески
+        a.menu-item(href="#necklace")
+          | Колье
+
+
+      .socials
+        a.socials__fb(href="https://www.facebook.com/derevoros")
+        a.socials__ig(href="https://www.instagram.com/d_e_r_e_v_o/")
+        a.socials__vk(href="https://vk.com/d_e_r_e_v_o_r")
+
+      .about
+        a.about-phone(href="tel:89381553115")
+          | 8 (938) 155-31-15
+        a.about-email(href="mailto:example@email.com")
+          | example@email.com
+
+    .wrapper
+      .catergory.bracelets#bracelets
+        .header
+          .header-title
+            | Браслеты
+        .content
+
+      .catergory.chokers#chokers
+        .header
+          .header-title
+            | Чокеры
+        .content
+
+      .catergory.earrings#earrings
+        .header
+          .header-title
+            | Серьги
+        .content
+
+      .catergory.rings#rings
+        .header
+          .header-title
+            | Кольца
+        .content
+
+      .catergory.pendant#pendant
+        .header
+          .header-title
+            | Подвески
+        .content
+
+      .catergory.necklace#necklace
+        .header
+          .header-title
+            | Колье
+        .content
