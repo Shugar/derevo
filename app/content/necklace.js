@@ -1,4 +1,4 @@
-const earrings = [
+const necklace = [
   {
     id: 1,
     name: 'iouoijoijioj',
