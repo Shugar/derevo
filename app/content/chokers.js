@@ -1,4 +1,4 @@
-const chokers = [
+var chokers = [
   {
     id: 1,
     name: 'Чокер и бусиной пирита',

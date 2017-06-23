@@ -1,4 +1,4 @@
-const earrings = [
+var pendant = [
   {
     id: 1,
     name: 'iouoijoijioj',

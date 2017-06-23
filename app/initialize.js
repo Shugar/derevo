@@ -16,7 +16,7 @@ import necklace from './content/necklace.js'
 
 // функция которая возвращает нам строку
 function getGridClass () {
-  const number = Math.floor(Math.random() * 10)
+  var number = Math.floor(Math.random() * 10)
   // получаем случайное число от 0 до 10
   // Math.random() вернет 0 -> 1 с числами после запятой
   // Math.random() * 10 вернет тоже самое, что выше, только умноженное на 10 (от 1 до 10)
@@ -36,29 +36,11 @@ function getItems (data, name) {
   // data, name — это аргументы функции которые могут быть чем угодно, но нам нужно
   // чтобы это был data — массив объектов, а name — строка
 
-  const earrings = [
-    {
-      id: 1,
-      name: 'Серьги и брасл из агата',
-      image_path: 'earrings-1'
-    },
-    {
-      id: 2,
-      name: 'Серьги и браслет из агата 2',
-      image_path: 'earrings-2',
-    }
-  ]
-
   // пробегаемся по массиву
   return data.map((item, index) => {
     // здесь item это каждый элемент массива, например
-    // {
-    //  id: 2,
-    //  name: 'Серьги и браслет из агата 2',
-    //  image_path: 'earrings-2'
-    // },
 
-    const result = `
+    var result = `
       <div class='${getGridClass()}' style='background-image: url(../images/${item.image_path}.jpg)'>
         <input type="hidden" value="../images/${item.image_path}.jpg" />
         <div class="content-info">

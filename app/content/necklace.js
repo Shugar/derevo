@@ -1,4 +1,4 @@
-const necklace = [
+var necklace = [
   {
     id: 1,
     name: 'iouoijoijioj',

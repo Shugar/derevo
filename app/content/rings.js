@@ -1,4 +1,4 @@
-const rings = [
+var rings = [
   {
     id: 1,
     name: 'Кольцо Грани из дуба 18 размер',

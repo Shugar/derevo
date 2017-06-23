@@ -1,4 +1,4 @@
-const bracelets = [
+var bracelets = [
   {
     id: 1,
     name: 'Браслет и серьги из речного жемчуга',
